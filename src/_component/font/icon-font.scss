@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'icomoon';
+  src:
+    url('asset/font/icomoon.ttf?s6ms1i') format('truetype'),
+    url('asset/font/icomoon.woff?s6ms1i') format('woff'),
+    url('asset/font/icomoon.svg?s6ms1i#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-aircraft:before {
+  content: "\e900";
+}
+.icon-briefcase:before {
+  content: "\e901";
+}
+.icon-calendar:before {
+  content: "\e902";
+}
+.icon-globe:before {
+  content: "\e903";
+}
+.icon-home:before {
+  content: "\e904";
+}
+.icon-info-with-circle:before {
+  content: "\e905";
+}
+.icon-map:before {
+  content: "\e906";
+}
+.icon-menu:before {
+  content: "\e907";
+}
+.icon-plus:before {
+  content: "\e908";
+}
+.icon-tools:before {
+  content: "\e909";
+}
+.icon-trophy:before {
+  content: "\e90a";
+}
+.icon-user:before {
+  content: "\e90b";
+}
+.icon-google:before {
+  content: "\ea88";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-skype:before {
+  content: "\eac5";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+.icon-stackoverflow:before {
+  content: "\ead0";
+}
+.icon-file-word:before {
+  content: "\eae1";
+}
+.icon-html-five:before {
+  content: "\eae4";
+}
