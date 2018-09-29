@@ -1,0 +1,23 @@
+-
+    var myFullName = 'Iulian Carnaru';
+    var myJobTitle = 'Junior Web Developer';
+    var socialList = [
+        {icon: 'facebook', url: 'https://facebook.com/iulian.carnaru'},
+        {icon: 'linkedin2', url: 'https://www.linkedin.com/in/iulian-carnaru-51aa63108/'},
+        {icon: 'github', url: 'https://github.com/iuliancarnaru'},
+        {icon: 'twitter', url: 'https://twitter.com/'},
+        {icon: 'stackoverflow', url: 'https://stackoverflow.com/users/10256669/iulian-carnaru'},
+        {icon: 'youtube', url: 'https://www.youtube.com/channel/UCDNLgYQX5wDKSEDTBn-ht3Q'}
+    ];
+
+#landing-page
+.landing-page
+    .landing-page__wrapper
+        h1.landing-page__name=myFullName
+        h2.landing-page__title=myJobTitle
+
+        ul.landing-page__social
+            each social in socialList
+                li.landing-page__item
+                    label.landing-page__label(for="")
+                        span(class=`icon-${social.icon}`)
