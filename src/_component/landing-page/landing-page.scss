@@ -1,0 +1,35 @@
+.landing-page {
+    min-height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(#8a8fa2, #415a67);
+
+    &__wrapper {
+        text-align: center;
+    }
+
+    &__name {
+        font-size: 4rem;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-size: 2rem;
+        text-transform: capitalize;
+    }
+
+    &__social {
+        display: flex;
+        margin-top: 3rem;
+        justify-content: center;
+    }
+
+    &__label {
+        color: #fff;
+        padding: 0.1rem 0.3rem;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
+
