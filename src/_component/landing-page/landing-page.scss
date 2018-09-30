@@ -10,13 +10,15 @@
     }
 
     &__name {
-        font-size: 4rem;
+        font-size: 3rem;
         text-transform: uppercase;
+        color: #fff;
     }
 
     &__title {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-transform: capitalize;
+        color: #415a67;
     }
 
     &__social {
@@ -30,6 +32,79 @@
         padding: 0.1rem 0.3rem;
         font-size: 2rem;
         cursor: pointer;
+    }
+
+    &__box-radio,
+    &__box-message {
+        display: none;
+    }
+
+    &__box-radio:checked + &__box-message {
+        display: inherit;
+    }
+
+    #default-radio-button:checked +
+    &__box-message +
+    &__box-header {
+        display: none;
+    }
+
+    &__box-body {
+        display: inline-block;
+        border: 0.2rem solid #fff;
+        border-radius: 0.5rem;
+        padding: 0.8rem;
+        margin-top: 0.5rem;
+        position: relative;
+    }
+
+    &__box-header {
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        top: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__box-info,
+    &__box-close {
+        background: #fff;
+        padding: 0.4rem;
+        white-space: nowrap;
+        line-height: 1.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__box-info {
+        border-bottom-left-radius: 0.5rem;
+        flex-grow: 1;
+    }
+
+    &__box-close {
+        border-bottom-right-radius: 0.5rem;
+        cursor: pointer;
+        width: 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    &__box-link,
+    &__box-link:visited,
+    &__box-message {
+        color: #fff;
+    }
+
+    &__box-link,
+    &__box-link:visited {
+        font-size: 1.4rem;
+        white-space: nowrap;
+        text-decoration: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 80vmin;
+        display: block;
     }
 }
 
