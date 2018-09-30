@@ -11,7 +11,7 @@
     };
 
     var coolStuff = {
-        title: 'Grab cool stuff',
+        title: 'grab cool stuff',
         buttonList: [
             {
                 url: 'https://github.com/iuliancarnaru/my-cv',
@@ -40,7 +40,7 @@
     .about-me__avatar-wrapper
         img.about-me__avatar(src=imagePath)
     .about-me__full-name=myFullName
-    .about-me__full-title=myTitle
+    .about-me__title=myTitle
     .about-me__quote=quote
 
     .about-me__title=achievement.title
@@ -48,7 +48,7 @@
 
     .about-me__title=coolStuff.title
     .about-me__link-list
-        each coolItem in coolStuff.buttonList
-            a(href=button.url)
-                span=button.text
+        each button in coolStuff.buttonList
+            a.about-me__link(href=button.url, target="_blank")
+                span.about-me__link-description=button.text
                 span(class=`icon-${button.icon}`)
