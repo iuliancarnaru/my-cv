@@ -12,13 +12,13 @@
   &__name {
     font-size: 3rem;
     text-transform: uppercase;
-    color: #fff;
+    color: $color-white;
   }
 
   &__title {
     font-size: 1.5rem;
     text-transform: capitalize;
-    color: #415a67;
+    color: $color-fiord;
   }
 
   &__social {
@@ -28,7 +28,7 @@
   }
 
   &__label {
-    color: #fff;
+    color: $color-white;
     padding: 0.1rem 0.3rem;
     font-size: 2rem;
     cursor: pointer;
@@ -49,7 +49,7 @@
 
   &__box-body {
     display: inline-block;
-    border: 0.2rem solid #fff;
+    border: 0.2rem solid $color-white;
     border-radius: 0.5rem;
     padding: 0.8rem;
     margin-top: 0.5rem;
@@ -68,7 +68,7 @@
 
   &__box-info,
   &__box-close {
-    background: #fff;
+    background: $color-white;
     padding: 0.4rem;
     white-space: nowrap;
     line-height: 1.5rem;
@@ -91,7 +91,7 @@
   &__box-link,
   &__box-link:visited,
   &__box-message {
-    color: #fff;
+    color: $color-white;
   }
 
   &__box-link,
