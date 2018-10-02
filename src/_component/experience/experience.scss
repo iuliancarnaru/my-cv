@@ -1,0 +1,13 @@
+.experience {
+    &__header {
+        @extend %header;
+    }
+
+    &__details {
+        display: none;
+    }
+
+    &__input:checked + &__title + &__details {
+        display: inherit;
+    }
+}
