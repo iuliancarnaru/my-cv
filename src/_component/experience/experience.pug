@@ -40,13 +40,14 @@
 .experience
     .experience__header=header
 
-    input(type="radio", name="my-experience", id="experience-default")
-    label(for="experience-default") &times;
+    input.experience__input(type="radio", name="my-experience", id="experience-default")
 
     each experience, key in experienceList
         input.experience__input(type="radio", id=`experience-id-${key}`, name="my-experience")
-        label.experience__title(for=`experience-id-${key}`)=experience.title
-
+        label.experience__title(for=`experience-id-${key}`)
+            | #{experience.title}
+            label(for="experience-default")
+                span.icon-plus
         .experience__details
             .experience__top
                 .experience__date=experience.date
