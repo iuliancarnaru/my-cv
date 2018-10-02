@@ -1,0 +1,28 @@
+.what-can-i-do {
+  &__header {
+    color: $color-periwinkle-gray;
+    @extend %header;
+  }
+
+  &__title {
+    color: $color-fiord;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__skill {
+    border: 0.1rem solid $color-periwinkle-gray;
+    padding: 1rem;
+    margin: 0.2rem;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    white-space: nowrap;
+  }
+}

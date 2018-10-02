@@ -17,27 +17,30 @@
     display: flex;
     flex-wrap: wrap;
 
-    & > div {
+    &>div {
       border-top: 0.1rem solid $color-fiord;
     }
 
-    & > div:nth-child(even) {
+    &>div:nth-child(even) {
       width: 75%;
       padding: 0 1rem;
       display: flex;
       align-items: center;
     }
 
-    & > div:nth-child(1) {
+    &>div:nth-child(1) {
       background-color: $color-pelorous;
     }
-    & > div:nth-child(3) {
+
+    &>div:nth-child(3) {
       background-color: $color-charm;
     }
-    & > div:nth-child(5) {
+
+    &>div:nth-child(5) {
       background-color: $color-affair;
     }
-    & > div:nth-child(7) {
+
+    &>div:nth-child(7) {
       background-color: $color-confetti;
     }
   }
