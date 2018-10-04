@@ -44,16 +44,26 @@
 
         &__message {
             &--show {
-                display: block;
+                display: none;
             }
 
             &--hide {
-                display: none;
+                display: block;
             }
         }
     }
 
     #landscape:checked + .landscape {
         top:-100%;
+    }
+
+    #landscape:checked + .landscape .landscape__message {
+        &--show {
+            display: block;
+        }
+
+        &--hide {
+            display: none;
+        }
     }
 }
