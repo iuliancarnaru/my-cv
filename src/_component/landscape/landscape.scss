@@ -1,0 +1,59 @@
+.landscape {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $color-periwinkle-gray;
+    transition: all 0.25s;
+    display: none;
+
+    &__input {
+        display: none;
+    }
+
+    &__button {
+        display: block;
+        background-color: $color-fiord;
+        color: $color-white;
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        font-size: 2rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        border: 0.1rem solid $color-white;
+    }
+
+    &__description {
+        padding: 2rem 0;
+    }
+}
+
+@media (orientation: landscape) {
+    .landscape {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-white;
+        font-size: 2rem;
+
+        &__list {
+            list-style-type: disc;
+        }
+
+        &__message {
+            &--show {
+                display: block;
+            }
+
+            &--hide {
+                display: none;
+            }
+        }
+    }
+
+    #landscape:checked + .landscape {
+        top:-100%;
+    }
+}
